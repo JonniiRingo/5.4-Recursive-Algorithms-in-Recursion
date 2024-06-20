@@ -295,7 +295,7 @@ public:
 
 ////////////////////////////////////////////////////////////////////////////////////// Marked For Testing ////////////////////////////////////////////////////////////////////////////////
 
-    void BubbleSort(int target) {
+    void BubbleSort(int n) {
     bool swapped;
         for (int i = 0; i < n - 1; i++) {
             swapped = false;
@@ -320,11 +320,11 @@ public:
 
     }
 
-    bool isSorted(vec<T> & arr){
-        SIZE = vec.size;
+    bool isSorted(){
+        int SIZE = sizeOf();
         for(int i = 0; i < size; i++){
             for(int j = 1; j <= size; j++){
-                if arr[i] > arr[j]
+                if (arr[i] > arr[j])
                 return false;
                 std::cout << "Vector is not sorted" << endl; 
             }
@@ -404,7 +404,6 @@ int main() {
 
     std::cout << "Size: " << v1.sizeOf() << std::endl;  // Should print "Size: 5"
 
-
     std::cout << "The element at the front of the vector is " << v1.front() << std::endl; 
     std::cout << "The element at the rear of the vector is " << v1.back() << std::endl; 
 
@@ -428,4 +427,12 @@ int main() {
     v1.print();
 
     return 0;
+
+
+
+
+
+
+
+
 }
