@@ -1,0 +1,14 @@
+Lesson 5.4: Recursive Algorithms in C++
+
+Concept Overview:
+In Lesson 5.3, we delved into the fundamental concepts of recursion, including the base case and recursive case. Now, we will explore recursive algorithms in more depth. Recursive algorithms are a powerful tool in computer science, used to solve complex problems by breaking them down into smaller, more manageable subproblems. This approach, often referred to as "divide and conquer", allows us to apply the same algorithm to each subproblem, simplifying the overall problem-solving process.
+
+Key Terminology:
+- Recursive Algorithm: An algorithm that solves a problem by breaking it down into smaller subproblems of the same type.
+- Divide and Conquer: A strategy of solving complex problems by breaking them down into more manageable subproblems.
+- Problem Decomposition: The process of breaking a problem down into smaller, more manageable parts.
+- Merge Step: In divide and conquer algorithms, the merge step combines the solutions of the subproblems to form the solution to the original problem.
+
+References:
+- [Designing Recursive Algorithms](https://www.example.com/designing_recursive_algorithms)
+- [Merge Sort in C++](https://www.example.com/merge_sort_in_cpp)
