@@ -92,11 +92,13 @@ private:
     T *arr; 
 
 public:
-    vector(T v): capacity(v), arr(new T[v]){
+    vec(T v): capacity(v), arr(new T[v]){
         for(int i = 0; i < capacity; i++ ){
             arr[i] = 0; 
         }
     }
+
+    vec(): capacity(0), arr[nullptr] {}
 
     void pushBack(const T &val) {
         if(size >= capacity){
@@ -228,7 +230,7 @@ public:
         T *reversed = new T[capacity]; 
         int base = 0;
         int tail = size - 1; 
-        int emptyIndexies = size + 2;
+        int emptyIndexies = size + 2
         for(int i = 0; i < size; i++){
             reversed[base ++] = arr[tail --]; 
             for(int j= emptyIndexies; j < capacity; j++){
@@ -337,7 +339,13 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////// Marked For Testing ////////////////////////////////////////////////////////////////////////////////
 
 
+// New member function 
 
+void generate(){
+
+    // Use the rand function and a for loop to populate the vector with random numbers
+    return; 
+}
 
 
 
@@ -361,7 +369,7 @@ public:
         std::cout << "back() To access the last element. " << std::endl;
     }
 
-    ~vector(){
+    ~vec(){
         delete [] arr;
     }
 
@@ -375,7 +383,7 @@ public:
 
 int main() {
     // Create a vector with initial capacity of  10
-    vector<int> v1(10);
+    vec<int> v1(10);
 
     // Test pushBack
     v1.pushBack(5);
@@ -427,12 +435,6 @@ int main() {
     v1.print();
 
     return 0;
-
-
-
-
-
-
 
 
 }
